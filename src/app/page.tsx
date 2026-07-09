@@ -1,3 +1,6 @@
+export { default } from "./academy/page";
+
+/*
 import Image from "next/image";
 import { Brain, Cloud, Database, Code2, ArrowRight } from "lucide-react";
 
@@ -216,3 +219,4 @@ export default function Home() {
     </main>
   );
 }
+  */

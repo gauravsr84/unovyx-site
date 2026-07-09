@@ -2,30 +2,21 @@ import Image from "next/image";
 import { Brain, Cloud, Database, Code2, ArrowRight } from "lucide-react";
 
 const services = [
-  ["AI Strategy", "Identify high-value AI use cases and build a practical adoption roadmap.", Brain],
   ["Enterprise AI Solutions", "LLM apps, RAG assistants, workflow automation and AI-enabled products.", Brain],
   ["Cloud & Platform Engineering", "Modern cloud architecture, migration, scalability and cost optimization.", Cloud],
-  ["Data Platforms", "Pipelines, analytics, dashboards and clean data foundations for AI.", Database],
   ["Software Modernization", "Modernize legacy applications, APIs, engineering workflows and delivery practices.", Code2],
 ];
 
 const caseStudies = [
   {
-    title: "AI Knowledge Assistant",
-    desc: "An AI assistant that helps teams search, summarize and act on business knowledge faster.",
+    title: "AI Engineering Copilot",
+    desc: "An AI-powered Engineering Assistant that automates the journey from a Jira requirement to a production-ready Pull Request",
+    href: "/case-studies/jira-to-pr"
   },
   {
-    label: "AI Software Delivery Accelerator",
-    title: "From JIRA requirement to review-ready Pull Request",
-    desc: "An AI-powered engineering assistant that helps teams understand requirements, analyze existing code, identify impacted components, generate implementation guidance, create tests and prepare review-ready pull requests.",
-    points: [
-      "Requirement understanding",
-      "Codebase impact analysis",
-      "Implementation recommendations",
-      "Unit test generation",
-      "Technical documentation",
-      "Pull Request preparation",
-    ],
+    title: "AI Powered Executive Intelligence Platform",
+    desc: "AI-powered decision intelligence platform that unifies data from enterprise systems—including CRM, ERP, JIRA, SharePoint, Google Drive, and email—to provide CEOs and executive leadership with real-time business intelligence, predictive insights, and actionable recommendations.",
+    href: "/case-studies/executive-intelligence-platform"
   },
   {
     title: "AI Modernization Program",
@@ -163,7 +154,7 @@ export default function Home() {
           <div className="mt-14 divide-y divide-slate-200 border-y border-slate-200">
             {caseStudies.map((item) => (
               <article
-                key={item.title}
+                key={item.title}                
                 className="grid gap-6 py-10 md:grid-cols-[1fr_2fr_auto] md:items-center"
               >
                 <p className="text-sm font-bold uppercase tracking-widest text-slate-400">
@@ -180,10 +171,10 @@ export default function Home() {
                 </div>
 
                 <a
-                  href="#contact"
+                  href={item.href}
                   className="inline-flex items-center gap-2 font-semibold text-blue-700"
                 >
-                  Discuss this <ArrowRight size={18} />
+                  Read More <ArrowRight size={18} />
                 </a>
               </article>
             ))}

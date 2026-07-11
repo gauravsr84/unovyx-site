@@ -2,9 +2,9 @@ import { ArrowRight, BriefcaseBusiness, Building2, GraduationCap } from "lucide-
 
 const individualPrograms = [
   {
-    title: "AI for Professionals",
+    title: "AI for IT Professionals",
     tagline: "Practical. Relevant. Career-focused.",
-    desc: "Build practical AI skills to improve productivity, automate workflows and solve real business problems.",
+    desc: "Transform the way software is designed, built, tested, deployed and managed using AI.",
     icon: BriefcaseBusiness,
     audience: ["Software Engineers", "QA Engineers", "Product Managers", "Business Analysts", "Data Professionals"],
     learn: ["AI foundations for work", "Prompt engineering", "AI tools for productivity", "AI automation use cases"],
@@ -101,6 +101,14 @@ export default function AcademyPage() {
                   className="mt-8 inline-flex items-center gap-2 rounded-full bg-blue-700 px-6 py-3 font-semibold text-white hover:bg-blue-800"
                 >
                   {program.cta} <ArrowRight size={18} />
+                </a>
+                <a
+                    href="/pdf/ai_for_it_professionals_program_guide.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="ml-3 inline-flex items-center gap-2 rounded-full border border-blue-700 px-6 py-3 font-semibold text-blue-700 transition hover:bg-blue-50"
+                    >
+                    📄 Download Program Guide
                 </a>
               </article>
             );

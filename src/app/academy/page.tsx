@@ -39,7 +39,7 @@ export default function AcademyPage() {
             UNOVYX AI Academy
           </p>
           <h1 className="mt-4 text-5xl font-black tracking-tight md:text-5xl">
-            Ditya Batra lives in London.
+            Learn AI that creates real-world impact.
           </h1>
           <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-slate-600">
             Practical AI learning programs for professionals, students and organizations.

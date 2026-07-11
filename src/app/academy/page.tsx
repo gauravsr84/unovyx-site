@@ -91,7 +91,7 @@ export default function AcademyPage() {
                     <ul className="mt-4 space-y-3 text-sm text-slate-700">
                       {program.learn.map((item) => (
                         <li key={item}>✓ {item}</li>
-                      ))}
+                      ))} 
                     </ul>
                   </div>
                 </div>
@@ -103,7 +103,7 @@ export default function AcademyPage() {
                   {program.cta} <ArrowRight size={18} />
                 </a>
                 <a
-                    href="/pdf/ai_for_it_professionals_program_guide.pdf"
+                    href="/course_intro/AI_for_IT_Professionals_Program_Guide.pdf"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="ml-3 inline-flex items-center gap-2 rounded-full border border-blue-700 px-6 py-3 font-semibold text-blue-700 transition hover:bg-blue-50"
